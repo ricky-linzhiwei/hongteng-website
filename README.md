@@ -18,6 +18,7 @@ hongteng-website/
 1. ~~**联系电话/微信**~~ ✅ 已填：统一热线 0594-8666880、微信/手机 18965579740（渠道变更时同步更新 `index.html` 与 JSON-LD）。
 2. **客户评价**：`#reviews` 区块的 3 条见证为占位文案，请替换为**真实客户授权案例/实名评价**（EEAT 关键）。
 3. **域名替换**：`robots.txt`、`sitemap.xml` 中的 `your-domain.example.com` 改为你的正式域名。
+4. ~~**百度站长验证标签**~~ ✅ 已预埋：`<meta name="baidu-site-verification" content="【粘贴百度站长平台验证代码】">`，登录 ziyuan.baidu.com 添加网站后，把百度给的验证代码填进 content 即可。
 
 ## 最低成本部署方案
 
@@ -45,3 +46,20 @@ hongteng-website/
 - 每周在官网/公众号/百家号/知乎围绕 15 个本地意图问题产出 EEAT 长文，持续拉升 8 平台提及率。
 - 补全企查查/爱企查词条字段，更新知乎陈旧信息。
 - 部署后提交百度/必应收录，并用 15 问 × 8 平台看板月度监测 AIVO 变化。
+
+## 百度收录操作（当前进度）
+> 站点已部署在 GitHub Pages，线上地址：https://ricky-linzhiwei.github.io/hongteng-website/
+> 百度/必应收录**必须由你本人用个人百度账号完成站点验证**（同 GitHub，我无法代为注册个人账号）。其余我已做好。
+
+**你只需做 1 步：**
+1. 浏览器打开 https://ziyuan.baidu.com/site （百度搜索资源平台 → 站点管理 → 添加网站）
+2. 输入站点地址 `https://ricky-linzhiwei.github.io/hongteng-website/` → 选择"HTML 标签验证"
+3. 复制百度给的 `content` 验证码（形如 `abcdefg123456`），发给我
+4. 我把它填进 `index.html` 的 `baidu-site-verification` 标签并重新推送；你再在百度后台点"完成验证"
+
+**验证通过后（我可代执行的）：**
+- 站点地图提交：`sitemap.xml` 已在 https://ricky-linzhiwei.github.io/hongteng-website/sitemap.xml
+- 主动推送：拿到百度"接口调用地址/站点 token"后，我可写脚本批量推送 URL 加速收录
+- 必应收录：https://www.bing.com/webmasters 同样添加站点（支持 XML 提交）
+
+> 注意：GitHub Pages 的 `github.io` 域名在国内访问偏慢，且不利于长期 SEO/GEO。建议按上面"方案 B"换国内合规域名+备案，百度收录与 AI 抓取会更稳。
